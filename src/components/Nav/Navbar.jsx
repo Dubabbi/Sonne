@@ -1,22 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as L from './NavbarStyle';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate, useLocation } from 'react-router-dom'; 
 import LogoImg from '/src/assets/icon/logoimg.svg';
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
   const [selectedProject, setSelectedProject] = useState('Dropdown'); 
   const navigate = useNavigate(); 
+  const location = useLocation();
+  useEffect(() => {
+    switch (location.pathname) {
+      case '/':
+        setSelectedProject('메인화면');
+        break;
+      case '/aboutme':
+        setSelectedProject('자기소개');
+        break;
+      case '/project':
+        setSelectedProject('프로젝트');
+        break;
+      case '/techstack':
+        setSelectedProject('기술스택');
+        break;
+      case '/activity':
+        setSelectedProject('대외활동');
+        break;
+      default:
+        setSelectedProject('Dropdown'); // 기본값
+    }
+  }, [location.pathname]); 
+
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen); 
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const selectProject = (project, path) => {
-    setSelectedProject(project); 
-    setIsDropdownOpen(false); 
-    navigate(path); 
+    setSelectedProject(project);
+    setIsDropdownOpen(false);
+    navigate(path);
   };
 
   return (
