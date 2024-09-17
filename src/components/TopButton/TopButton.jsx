@@ -8,8 +8,8 @@ export const Add = styled.img`
   height: 5vw;
   cursor: pointer;
   position: fixed;
-  right: 35px;
-  bottom: 20px;
+  right: 2vw;
+  bottom: 3vw;
 `;
 
 const TopButton = () => {

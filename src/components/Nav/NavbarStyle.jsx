@@ -295,3 +295,60 @@ export const Copyright = styled.div`
     margin-left: 5%;
     font-size: 1.3rem;
 `
+
+export const DropdownWrapper = styled.div`
+  position: relative;
+  max-width: 10%;
+  min-width: 10%;
+  display: inline-block;
+  margin-left: auto; 
+  margin-right: 2%;
+`;
+
+export const DropdownButton = styled.button`
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: bold;
+  padding: 0.7vw 1.2vw;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  
+  &:hover {
+    background-color: #222;
+  }
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  min-width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  margin-top: 0.7%;
+`;
+
+export const DropdownItem = styled.div`
+  color: #fff;
+  padding: 0.6vw;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+  font-size: 0.7vw;
+  &:hover {
+    background-color: #333;
+  }
+
+  &:last-child {
+    border-bottom: none;]
+  }
+`;

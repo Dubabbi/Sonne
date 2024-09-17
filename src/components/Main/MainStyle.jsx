@@ -227,26 +227,29 @@ export const MainWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 4rem; 
+  font-size: 2.3vw; 
   font-weight: bold;
   margin-bottom: 0.5rem;
 `;
 
 export const SubText = styled.p`
-  font-size: 1.5rem; 
+  font-size: 1.2vw; 
   margin-bottom: 2rem; 
 `;
 
 export const StartButton = styled.button`
-  font-size: 1rem;
-  padding: 10px 20px;
+  font-size: 1vw;
+  padding: 0.9vw 1.8vw;
   color: #FFFFFF;
   background-color: #6548A3; 
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5vw;
   cursor: pointer;
+  margin-top: 1%;
   transition: background-color 0.3s; 
   &:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     background-color: #8168B1;
   }
 `;
@@ -295,12 +298,26 @@ export const CardDescription = styled.p`
 `;
 
 
-export const CardButton = styled.a`
-  font-size: 1rem;
-  color: #b09eff;
-  text-decoration: none;
+export const Button = styled.button`
+  align-items: center;
+  text-align: center;
+  padding:  2% 5%;
+  border-radius: 0.5vw;
+  background-color: rgba(176, 158, 255, 0.1);
 
   &:hover {
-    color: #d0c1ff;
+    background-color: rgba(256, 256, 256, 0.6);
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out;
+    a{
+         color: #691EE2;
+    }
+  }
+  
+  a{
+    font-size: 1vw;
+    color: #fff;
+    text-decoration: none;
+    color: #F4F6F7;
   }
 `;
