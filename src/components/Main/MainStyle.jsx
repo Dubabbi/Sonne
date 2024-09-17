@@ -249,6 +249,7 @@ export const StartButton = styled.button`
   transition: background-color 0.3s; 
   &:hover {
     transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     background-color: #8168B1;
   }

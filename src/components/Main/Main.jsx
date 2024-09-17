@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as M from './MainStyle';
 import cardIcon1 from '/src/assets/image/Main/cardIcon1.svg';
 import cardIcon2 from '/src/assets/image/Main/cardIcon2.svg';
 import cardIcon3 from '/src/assets/image/Main/cardIcon3.svg';
 
 export default function Main() {
+  const navigate=useNavigate('');
     return (
         <>
         <M.MainWrapper>
           <M.Heading>프론트엔드 개발자 윤소은입니다.</M.Heading>
           <M.SubText>방문해 주셔서 감사합니다!</M.SubText>
-          <M.StartButton>About Me</M.StartButton>
+          <M.StartButton onClick={e=>navigate('/aboutme')}>About Me</M.StartButton>
         </M.MainWrapper>
 
 
