@@ -4,12 +4,12 @@ import Img from '/src/assets/icon/topbtn.svg';
 import styled from 'styled-components';
 
 export const Add = styled.img`
-  width: 5vw;
-  height: 5vw;
+  width: 4vw;
+  height: 4vw;
   cursor: pointer;
   position: fixed;
-  right: 2vw;
-  bottom: 3vw;
+  right: 2.5vw;
+  bottom: 2.5vw;
 `;
 
 const TopButton = () => {

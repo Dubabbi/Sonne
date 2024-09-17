@@ -18,14 +18,19 @@ export const bounceTwice = keyframes`
 
 export const ContactWrapper = styled.div`
     color: white;
-    font-size: 2rem;
+    font-size: 1.7vw;
     text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 0.5vw;
+    border: 0.2vw solid rgba(176, 158, 255, 0.1);
     align-items: center;
-    padding: 4% 11%;
+    max-width: 76%;
+    margin-left: 12%;
     display: flex;
-    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 12%;
     minHeight: 20vh;
-    background-color: #333;
     flex-direction: row;
     justify-content: space-around;
     @media (max-width: 1024px) {
@@ -37,23 +42,30 @@ export const ContactWrapper = styled.div`
         font-size: 1.5rem;
         color: grey;
         text-align: left;
+        margin-top: 2%;
     }
     h1{
         font-size: 3rem;
         color: white;
         text-align: left;
     }
+
 `
 
 export const Contact = styled.div`
-    background-color: #000;
     text-align: center;
     align-items: center;
     padding: 1% 3%;
     display: flex;
+    border-radius: 0.3vw;
+    background-color: rgba(176, 158, 255, 0.1);
     &:hover{
-        background-color: #555;
+        transform: scale(1.01); 
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        background-color: rgba(176, 158, 255, 0.2);
     }
+
     @media (max-width: 1024px) {
         max-width: 90%;
         padding: 0 2%;
@@ -241,7 +253,7 @@ export const StartButton = styled.button`
   font-size: 1vw;
   padding: 0.9vw 1.8vw;
   color: #FFFFFF;
-  background-color: #6548A3; 
+  background-color: rgba(176, 158, 255, 0.2); 
   border: none;
   border-radius: 0.5vw;
   cursor: pointer;
@@ -251,10 +263,9 @@ export const StartButton = styled.button`
     transform: scale(1.1); 
     transition: transform 0.2s ease-in-out;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background-color: #8168B1;
+    background-color: rgba(176, 176, 255, 0.4);
   }
 `;
-
 
 export const CardWrapper = styled.div`
   display: flex;

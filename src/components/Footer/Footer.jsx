@@ -1,7 +1,6 @@
 import React from "react";
 import * as L from '../Nav/NavbarStyle';
 import Logo from '/src/assets/image/Footer/logo.svg';
-import Mail from '/src/assets/image/Footer/mail.svg';
 
 
 export default function Footer() {
@@ -12,13 +11,6 @@ export default function Footer() {
             <img src={Logo} />
             <p>Sonne</p>
           </L.FooterTitle>
-          <L.FooterBox>
-          <L.FooterEnd>
-            <img src={Mail} />
-            <p>thdms3160@naver.com</p>
-          </L.FooterEnd>
-          <L.Contact><a href='mailto:thdms3160@naver.com'>Contact</a></L.Contact>
-          </L.FooterBox>
         </L.Footerline>
         <hr style={{margin: '2%', width: '90%', marginLeft: '5%', color: '#C1C7CD'}}/>
         <L.TextWrapper>

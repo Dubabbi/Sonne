@@ -48,12 +48,12 @@ export default function Main() {
                     </M.Button>
                 </M.Card>
             </M.CardWrapper>
-    {/*
+
       <M.ContactWrapper>
-        <div><h1>LET'S TALK</h1><p>Welcome to inquire or leave us a message, we will serve you wholeheartedly!</p></div>
-        <M.Contact>Contact Us!</M.Contact>
+        <div><h1>LET'S TALK</h1><p>Feel free to reach out for collaboration or inquiries, I'm always open to new opportunities!</p></div>
+        <M.Contact><a href="mailto: thdms3160@naver.com">Contact</a></M.Contact>
       </M.ContactWrapper>
-    */}
+
         </>
 
     );

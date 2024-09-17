@@ -175,7 +175,7 @@ export const List = styled.div`
 `
 
 export const FooterWrapper = styled.div`
-    background-color: #1f1f2e;
+    background-color: #0F0C13;
     font-size: 1.2vw;
     padding: 2% 0;
     margin-top: 4%;

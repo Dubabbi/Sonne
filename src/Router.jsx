@@ -21,7 +21,6 @@ export default function Router() {
         <Route path="/techstack" element={<TechstackPage />} />
         <Route path="/activity" element={<ActivityPage />} />
        </Routes>
-       <NotificationBar />
       <TopButton />
       <Footer />
     </BrowserRouter>
