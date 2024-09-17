@@ -26,27 +26,27 @@ export default function Main() {
     <M.CardWrapper>
                 <M.Card>
                     <M.CardIcon src={cardIcon1} alt="Trade Desk" />
-                    <M.CardTitle>Trade Desk</M.CardTitle>
+                    <M.CardTitle>기술 스택</M.CardTitle>
                     <M.CardDescription>
-                        Invest in crypto anytime, anywhere with our safe, secure, and easy to use platform.
+                        다룰 수 있는 기술 스택 및 개발 언어
                     </M.CardDescription>
                     <M.CardButton href="#">Get Started</M.CardButton>
                 </M.Card>
 
                 <M.Card>
                     <M.CardIcon src={cardIcon2} alt="CoinFlip ATMs" />
-                    <M.CardTitle>CoinFlip ATMs</M.CardTitle>
+                    <M.CardTitle>프로젝트</M.CardTitle>
                     <M.CardDescription>
-                        We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto.
+                        그동안 진행한 개인 & 팀 프로젝트 목록
                     </M.CardDescription>
                     <M.CardButton href="#">Find an ATM</M.CardButton>
                 </M.Card>
 
                 <M.Card>
                     <M.CardIcon src={cardIcon3} alt="CoinFlip Wallet" />
-                    <M.CardTitle>CoinFlip Wallet</M.CardTitle>
+                    <M.CardTitle>대외활동</M.CardTitle>
                     <M.CardDescription>
-                        Store your investments in our wallet that gives you access to DeFi services in one place.
+                        대학교 재학 중에 진행한 대외활동 목록
                     </M.CardDescription>
                     <M.CardButton href="#">Download the App</M.CardButton>
                 </M.Card>

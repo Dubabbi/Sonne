@@ -174,7 +174,7 @@ export const ItemImg = styled.a`
     padding: 1%;
 
     &:hover {
-      animation: ${bounceTwice} 1s ease-in-out; // 애니메이션 적용
+      animation: ${bounceTwice} 1s ease-in-out; 
     }
   }
 `;
@@ -212,8 +212,8 @@ export const ItemDesc = styled.div`
 export const MainWrapper = styled.div`
   font-size: 1.3vw;
   position: relative;
-  height: 100vh; // 높이를 뷰포트 높이에 맞추어 전체 화면을 채우도록 설정
-  color: #FFFFFF; // 텍스트 색상을 흰색으로 설정
+  height: 100vh; 
+  color: #FFFFFF; 
   line-height: 1.7;
   background-image: url(${backgroundImage});
   background-color: #000;
@@ -223,37 +223,35 @@ export const MainWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; // 텍스트를 중앙 정렬
+  text-align: center; 
 `;
 
 export const Heading = styled.h1`
-  font-size: 4rem; // 대형 폰트 사이즈
+  font-size: 4rem; 
   font-weight: bold;
-  margin-bottom: 0.5rem; // 하단 여백 설정
+  margin-bottom: 0.5rem;
 `;
 
 export const SubText = styled.p`
-  font-size: 1.5rem; // 중간 폰트 사이즈
-  margin-bottom: 2rem; // 하단 버튼과의 여백
+  font-size: 1.5rem; 
+  margin-bottom: 2rem; 
 `;
 
 export const StartButton = styled.button`
   font-size: 1rem;
   padding: 10px 20px;
   color: #FFFFFF;
-  background-color: #6548A3; // 버튼 배경색
+  background-color: #6548A3; 
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s; // 호버 효과
-
+  transition: background-color 0.3s; 
   &:hover {
-    background-color: #8168B1; // 버튼 호버시 색상 변경
+    background-color: #8168B1;
   }
 `;
 
 
-// 카드 전체를 감싸는 래퍼
 export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -262,7 +260,6 @@ export const CardWrapper = styled.div`
   background-color: #010102;
 `;
 
-// 개별 카드 요소
 export const Card = styled.div`
   background-color: #1f1f2e;
   color: white;
@@ -271,34 +268,34 @@ export const Card = styled.div`
   width: 22%;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover {
-    transform: translateY(-10px);
+    transform: scale(1.1); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
 `;
 
-// 카드 내부 아이콘 이미지
+
 export const CardIcon = styled.img`
   width: 50px;
   margin-bottom: 1rem;
 `;
 
-// 카드 제목
+
 export const CardTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.2vw;
+  margin-bottom: 1vw;
+  font-weight: bold;
 `;
 
-// 카드 설명 텍스트
 export const CardDescription = styled.p`
-  font-size: 1rem;
+  font-size: 0.9vw;
   color: #d0d0d0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3vw;
 `;
 
-// 카드의 CTA 버튼
+
 export const CardButton = styled.a`
   font-size: 1rem;
   color: #b09eff;
