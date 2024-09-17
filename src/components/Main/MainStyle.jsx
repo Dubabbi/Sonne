@@ -251,3 +251,60 @@ export const StartButton = styled.button`
     background-color: #8168B1; // 버튼 호버시 색상 변경
   }
 `;
+
+
+// 카드 전체를 감싸는 래퍼
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 1vw 0;
+  background-color: #010102;
+`;
+
+// 개별 카드 요소
+export const Card = styled.div`
+  background-color: #1f1f2e;
+  color: white;
+  border-radius: 1vw;
+  padding: 1.3vw;
+  width: 22%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+`;
+
+// 카드 내부 아이콘 이미지
+export const CardIcon = styled.img`
+  width: 50px;
+  margin-bottom: 1rem;
+`;
+
+// 카드 제목
+export const CardTitle = styled.h3`
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+`;
+
+// 카드 설명 텍스트
+export const CardDescription = styled.p`
+  font-size: 1rem;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+`;
+
+// 카드의 CTA 버튼
+export const CardButton = styled.a`
+  font-size: 1rem;
+  color: #b09eff;
+  text-decoration: none;
+
+  &:hover {
+    color: #d0c1ff;
+  }
+`;

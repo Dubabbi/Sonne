@@ -1,83 +1,56 @@
 import React, { useState } from 'react';
 import * as M from './MainStyle';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import image1 from '/src/assets/image/Main/image1.svg';
 import image2 from '/src/assets/image/Main/image2.svg';
 import image3 from '/src/assets/image/Main/image3.svg';
 import image4 from '/src/assets/image/Main/image4.svg';
 import image5 from '/src/assets/image/Main/image5.svg';
 import image6 from '/src/assets/image/Main/image6.svg';
-import arrowleft from '/src/assets/image/Main/arrowleft.svg';
-import arrowright from '/src/assets/image/Main/arrowright.svg';
+import cardIcon1 from '/src/assets/image/Main/cardIcon1.svg';
+import cardIcon2 from '/src/assets/image/Main/cardIcon2.svg';
+import cardIcon3 from '/src/assets/image/Main/cardIcon3.svg';
 
 export default function Main() {
     const images = [image1, image2, image3, image4, image5, image6];
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [showArrows, setShowArrows] = useState(false);
-
-    const goToPrevious = () => {
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    };
-
-    const goToNext = () => {
-        const isLastSlide = currentIndex === images.length - 1;
-        const newIndex = isLastSlide ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-    };
 
     return (
         <>
         <M.MainWrapper>
-          <M.Heading>We make crypto clear and simple</M.Heading>
-          <M.SubText>Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</M.SubText>
+          <M.Heading>프론트엔드 개발자 윤소은입니다.</M.Heading>
+          <M.SubText>방문해 주셔서 감사합니다!</M.SubText>
           <M.StartButton>Get Started</M.StartButton>
         </M.MainWrapper>
-        <M.Layer className="company-synopses">
-      <M.List>
-      <M.SynopsisItem className="synopsis-item wow fadeInUpA animated" data-wow-delay="0s">
-          <M.ItemWrap>
-            <M.ItemImg href="">
-              <img src="https://cdn.globalso.com/inbertec/th-2.png" alt="Free Sample"/>
-            </M.ItemImg>
-            <M.ItemInfo>
-              <M.ItemTitle>
-                <a href="">Free Sample</a>
-              </M.ItemTitle>
-              <M.ItemDesc>Want to have a try?<br/>Apply for free sample!</M.ItemDesc>
-            </M.ItemInfo>
-          </M.ItemWrap>
-        </M.SynopsisItem>
-        <M.SynopsisItem className="synopsis-item wow fadeInUpA animated" data-wow-delay="0s">
-          <M.ItemWrap>
-            <M.ItemImg href="">
-              <img src="https://cdn.globalso.com/inbertec/th-2.png" alt="Free Sample"/>
-            </M.ItemImg>
-            <M.ItemInfo>
-              <M.ItemTitle>
-                <a href="">Free Sample</a>
-              </M.ItemTitle>
-              <M.ItemDesc>Want to have a try?<br/>Apply for free sample!</M.ItemDesc>
-            </M.ItemInfo>
-          </M.ItemWrap>
-        </M.SynopsisItem>
-        <M.SynopsisItem className="synopsis-item wow fadeInUpA animated" data-wow-delay="0s">
-          <M.ItemWrap>
-            <M.ItemImg href="">
-              <img src="https://cdn.globalso.com/inbertec/th-2.png" alt="Free Sample"/>
-            </M.ItemImg>
-            <M.ItemInfo>
-              <M.ItemTitle>
-                <a href="">Free Sample</a>
-              </M.ItemTitle>
-              <M.ItemDesc>Want to have a try?<br/>Apply for free sample!</M.ItemDesc>
-            </M.ItemInfo>
-          </M.ItemWrap>
-        </M.SynopsisItem>
-      </M.List>
-    </M.Layer>
+
+
+    <M.CardWrapper>
+                <M.Card>
+                    <M.CardIcon src={cardIcon1} alt="Trade Desk" />
+                    <M.CardTitle>Trade Desk</M.CardTitle>
+                    <M.CardDescription>
+                        Invest in crypto anytime, anywhere with our safe, secure, and easy to use platform.
+                    </M.CardDescription>
+                    <M.CardButton href="#">Get Started</M.CardButton>
+                </M.Card>
+
+                <M.Card>
+                    <M.CardIcon src={cardIcon2} alt="CoinFlip ATMs" />
+                    <M.CardTitle>CoinFlip ATMs</M.CardTitle>
+                    <M.CardDescription>
+                        We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto.
+                    </M.CardDescription>
+                    <M.CardButton href="#">Find an ATM</M.CardButton>
+                </M.Card>
+
+                <M.Card>
+                    <M.CardIcon src={cardIcon3} alt="CoinFlip Wallet" />
+                    <M.CardTitle>CoinFlip Wallet</M.CardTitle>
+                    <M.CardDescription>
+                        Store your investments in our wallet that gives you access to DeFi services in one place.
+                    </M.CardDescription>
+                    <M.CardButton href="#">Download the App</M.CardButton>
+                </M.Card>
+            </M.CardWrapper>
     {/*
       <M.ContactWrapper>
         <div><h1>LET'S TALK</h1><p>Welcome to inquire or leave us a message, we will serve you wholeheartedly!</p></div>
