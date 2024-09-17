@@ -22,7 +22,7 @@ export default function Navbar() {
     <>
       <L.LandingWrapper>
         <L.NavWrapper>
-          <L.Logo href="">Sonne</L.Logo>
+          <L.Logo onClick={e=>navigate('/')}>Sonne</L.Logo>
           <L.DropdownWrapper>
             <L.DropdownButton onClick={toggleDropdown}>
               {selectedProject} {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}

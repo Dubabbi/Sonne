@@ -15,6 +15,7 @@ export const NavWrapper = styled.div`
 export const Logo = styled.a`
   width: 200px;
   font-size: 3rem;
+  cursor: pointer;
   color: white;
   text-align: center;
   font-weight: bold;
