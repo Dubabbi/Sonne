@@ -7,15 +7,14 @@ export const NavWrapper = styled.div`
   align-items: center;
   position: fixed;
   z-index: 1000;
-  padding: 1%;
+  padding: 1% 2%;
   margin: 0;
   margin-bottom: 0;
 `;
 
 export const Logo = styled.a`
-  width: 200px;
-  font-size: 3rem;
-  cursor: pointer;
+  width: 20%;
+  font-size: 2.3vw;
   color: white;
   text-align: center;
   font-weight: bold;

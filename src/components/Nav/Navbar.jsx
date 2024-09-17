@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import * as L from './NavbarStyle';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom'; 
+import LogoImg from '/src/assets/icon/logoimg.svg';
 
 export default function Navbar() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // 드롭다운 열림 상태
-  const [selectedProject, setSelectedProject] = useState('Dropdown'); // 기본 선택된 프로젝트
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [selectedProject, setSelectedProject] = useState('Dropdown'); 
   const navigate = useNavigate(); 
 
   const toggleDropdown = () => {
@@ -22,7 +23,10 @@ export default function Navbar() {
     <>
       <L.LandingWrapper>
         <L.NavWrapper>
-          <L.Logo onClick={e=>navigate('/')}>Sonne</L.Logo>
+          <div onClick={e=>navigate('/')} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', maxWidth: '15%', gap: '4%', marginLeft: '2%'}}>
+            <img src={LogoImg} style={{maxWidth: '13%'}}/>
+            <L.Logo>Sonne</L.Logo>
+          </div>
           <L.DropdownWrapper>
             <L.DropdownButton onClick={toggleDropdown}>
               {selectedProject} {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
