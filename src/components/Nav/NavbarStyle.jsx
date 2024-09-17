@@ -6,7 +6,7 @@ export const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 1000;
+  z-index: 1002;
   padding: 1% 2%;
   margin: 0;
   margin-bottom: 0;
@@ -178,7 +178,6 @@ export const FooterWrapper = styled.div`
     background-color: #0F0C13;
     font-size: 1.2vw;
     padding: 2% 0;
-    margin-top: 4%;
     color: #555;
 `
 
