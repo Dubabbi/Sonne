@@ -14,8 +14,6 @@ export default function Main() {
           <M.SubText>방문해 주셔서 감사합니다!</M.SubText>
           <M.StartButton onClick={e=>navigate('/aboutme')}>About Me</M.StartButton>
         </M.MainWrapper>
-
-
     <M.CardWrapper>
                 <M.Card>
                     <M.CardIcon src={cardIcon1} alt="Trade Desk" />
@@ -24,7 +22,7 @@ export default function Main() {
                         다룰 수 있는 기술 스택 및 개발 언어
                     </M.CardDescription>
                     <M.Button>
-                    <a href="#">More</a>
+                    <a href="/techstack">More</a>
                     </M.Button>
                 </M.Card>
 
@@ -35,7 +33,7 @@ export default function Main() {
                         그동안 진행한 개인 & 팀 프로젝트 목록
                     </M.CardDescription>
                     <M.Button>
-                      <a href="#">More</a>
+                      <a href="/project">More</a>
                     </M.Button>
                 </M.Card>
 
@@ -46,7 +44,7 @@ export default function Main() {
                         대학교 재학 중에 진행한 대외활동 목록
                     </M.CardDescription>
                     <M.Button>
-                    <a href="#">More</a>
+                    <a href="/activity">More</a>
                     </M.Button>
                 </M.Card>
             </M.CardWrapper>
