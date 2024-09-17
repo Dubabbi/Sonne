@@ -257,7 +257,6 @@ export const CardWrapper = styled.div`
   justify-content: center;
   gap: 5%;
   padding: 1vw 0;
-  background-color: #010102;
 `;
 
 export const Card = styled.div`

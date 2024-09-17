@@ -175,7 +175,7 @@ export const List = styled.div`
 `
 
 export const FooterWrapper = styled.div`
-    background-color: #010102;
+    background-color: #1f1f2e;
     font-size: 1.2vw;
     padding: 2% 0;
     margin-top: 4%;
@@ -247,9 +247,9 @@ export const FooterBox = styled.div`
 `
 
 export const Contact = styled.button`
-    background-color: #0F62FE;
+    background-color: #rgba(217, 217, 217, 0.2);
     color: #fff;
-    border: 1px solid #0F62FE;
+    border: 1px solid #fff;
     border-radius: 0.2rem;
     font-size: 1.5rem;
     padding: 2% 3%;
@@ -262,6 +262,9 @@ export const Contact = styled.button`
     p{
         align-items: center;
         margin: 1%;
+    }
+    &:hover{
+        background-color: #dae6ed;
     }
 `
 export const TextWrapper = styled.div`
