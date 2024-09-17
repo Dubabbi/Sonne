@@ -59,6 +59,7 @@ export const Contact = styled.div`
     display: flex;
     border-radius: 0.3vw;
     background-color: rgba(176, 158, 255, 0.1);
+    font-size: 1.5vw;
     &:hover{
         transform: scale(1.01); 
         transition: transform 0.2s ease-in-out;

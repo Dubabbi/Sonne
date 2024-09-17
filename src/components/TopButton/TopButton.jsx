@@ -4,8 +4,8 @@ import Img from '/src/assets/icon/topbtn.svg';
 import styled from 'styled-components';
 
 export const Add = styled.img`
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   cursor: pointer;
   position: fixed;
   right: 2.5vw;
