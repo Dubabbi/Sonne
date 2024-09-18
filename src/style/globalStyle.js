@@ -41,6 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     font-family: 'LINESeedKR-Bd', sans-serif;
     font-size: 62.5%; /* 1rem = 10px */
+    background-color: #010102;
     user-select: none; /* disable text select */
   }
 

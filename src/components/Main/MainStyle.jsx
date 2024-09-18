@@ -229,7 +229,7 @@ export const MainWrapper = styled.div`
   color: #FFFFFF; 
   line-height: 1.7;
   background-image: url(${backgroundImage});
-  background-color: #000;
+  background-color: #010102;
   background-size: cover;
   background-position: center;
   display: flex;

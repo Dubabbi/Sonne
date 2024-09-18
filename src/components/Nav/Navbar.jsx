@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import * as L from './NavbarStyle';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaHome, FaBriefcase, FaUser, FaBook, FaLaptopCode } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom'; 
 import LogoImg from '/src/assets/icon/logoimg.svg';
-
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
   const [selectedProject, setSelectedProject] = useState('Dropdown'); 
@@ -56,11 +55,21 @@ export default function Navbar() {
             </L.DropdownButton>
             {isDropdownOpen && (
               <L.DropdownMenu>
-                <L.DropdownItem onClick={() => selectProject('메인화면', '/')}>메인화면</L.DropdownItem>
-                <L.DropdownItem onClick={() => selectProject('자기소개', '/aboutme')}>자기소개</L.DropdownItem>
-                <L.DropdownItem onClick={() => selectProject('프로젝트', '/project')}>프로젝트</L.DropdownItem>
-                <L.DropdownItem onClick={() => selectProject('기술스택', '/techstack')}>기술스택</L.DropdownItem>
-                <L.DropdownItem onClick={() => selectProject('대외활동', '/activity')}>대외활동</L.DropdownItem>
+                <L.DropdownItem bg="#f8f8f8" onClick={() => selectProject('메인화면', '/')}>
+                  <FaHome />메인화면
+                </L.DropdownItem>
+                <L.DropdownItem bg="#e1f5fe" onClick={() => selectProject('자기소개', '/aboutme')}>
+                  <FaUser />자기소개
+                </L.DropdownItem>
+                <L.DropdownItem bg="#fce4ec" onClick={() => selectProject('프로젝트', '/project')}>
+                  <FaBriefcase />프로젝트
+                </L.DropdownItem>
+                <L.DropdownItem bg="#e3f2fd" onClick={() => selectProject('기술스택', '/techstack')}>
+                  <FaLaptopCode />기술스택
+                </L.DropdownItem>
+                <L.DropdownItem bg="#fffde7" onClick={() => selectProject('대외활동', '/activity')}>
+                  <FaBook />대외활동
+                </L.DropdownItem>
               </L.DropdownMenu>
             )}
           </L.DropdownWrapper>

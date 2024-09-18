@@ -11,6 +11,7 @@ import TechstackPage from './components/Techstack/Techstack';
 import ActivityPage from './components/Activity/Activity';
 import ResumePage from './pages/Resume';
 import StudyPage from './pages/Study';
+import CS_studyPage from './components/Study/CS_study/CS_study';
 
 export default function Router() {
   return (
@@ -24,6 +25,7 @@ export default function Router() {
         <Route path="/activity" element={<ActivityPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/study" element={<StudyPage />} />
+        <Route path="/cs-study" element={<CS_studyPage />} />
        </Routes>
       <TopButton />
       <Footer />

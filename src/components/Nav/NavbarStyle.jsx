@@ -336,7 +336,7 @@ export const DropdownMenu = styled.div`
   z-index: 1000;
   margin-top: 0.7%;
 `;
-
+/*
 export const DropdownItem = styled.div`
   color: #fff;
   padding: 0.6vw;
@@ -349,5 +349,20 @@ export const DropdownItem = styled.div`
 
   &:last-child {
     border-bottom: none;]
+  }
+`;
+*/
+
+export const DropdownItem = styled.div`
+  color: #fff; // 흰색 글자
+  padding: 0.6vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; // 아이콘과 텍스트 사이 간격
+  background-color: ${props => props.bg || "#000"}; // 기본 배경색 검정
+
+  &:hover {
+    background-color: #333; // 호버 시 배경색 변경
   }
 `;

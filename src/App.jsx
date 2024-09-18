@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Router from './Router';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './style/globalStyle';

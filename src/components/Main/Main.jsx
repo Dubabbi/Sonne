@@ -8,7 +8,7 @@ import cardIcon3 from '/src/assets/image/Main/cardIcon3.svg';
 export default function Main() {
   const navigate=useNavigate('');
     return (
-        <>
+        <div style={{backgroundColor: '#010102'}}>
         <M.MainWrapper>
           <M.Heading>프론트엔드 개발자 윤소은입니다.</M.Heading>
           <M.SubText>방문해 주셔서 감사합니다!</M.SubText>
@@ -53,8 +53,7 @@ export default function Main() {
         <div><h1>LET'S TALK</h1><p>Feel free to reach out for collaboration or inquiries, I'm always open to new opportunities!</p></div>
         <M.Contact><a href="mailto: thdms3160@naver.com">Contact</a></M.Contact>
       </M.ContactWrapper>
-
-        </>
-
+      <div style={{height: '10vh'}}></div>
+      </div>
     );
 }
