@@ -9,6 +9,8 @@ import AboutMePage from './pages/AboutMe';
 import ProjectPage from './pages/Project';
 import TechstackPage from './components/Techstack/Techstack';
 import ActivityPage from './components/Activity/Activity';
+import ResumePage from './pages/Resume';
+import StudyPage from './pages/Study';
 
 export default function Router() {
   return (
@@ -20,6 +22,8 @@ export default function Router() {
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/techstack" element={<TechstackPage />} />
         <Route path="/activity" element={<ActivityPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/study" element={<StudyPage />} />
        </Routes>
       <TopButton />
       <Footer />
