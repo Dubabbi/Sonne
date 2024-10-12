@@ -3,6 +3,8 @@
 import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import backgroundImage from './noise.svg'; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const bounceTwice = keyframes`
   0%, 100% {
@@ -21,6 +23,7 @@ export const ContactWrapper = styled.div`
     font-size: 1.7vw;
     text-align: center;
     padding-top: 5%;
+    overflow: hidden;
     padding-bottom: 5%;
     border-radius: 0.5vw;
     border: 0.2vw solid rgba(176, 158, 255, 0.1);
@@ -61,7 +64,7 @@ export const Contact = styled.div`
     background-color: rgba(176, 158, 255, 0.1);
     font-size: 1.5vw;
     &:hover{
-        transform: scale(1.01); 
+        transform: scale(1.06); 
         transition: transform 0.2s ease-in-out;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         background-color: rgba(176, 158, 255, 0.2);
@@ -124,6 +127,13 @@ export const List = styled.ul`
   margin: 0 -.4rem;
   font-size: 0;
 `;
+
+
+export const scroll = keyframes`
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+`;
+
 
 export const SynopsisItem = styled.li`
   position: relative;
@@ -226,6 +236,7 @@ export const MainWrapper = styled.div`
   font-size: 1.3vw;
   position: relative;
   height: 100vh; 
+  max-width: 100%;
   color: #FFFFFF; 
   line-height: 1.7;
   background-image: url(${backgroundImage});
@@ -333,4 +344,84 @@ export const Button = styled.button`
     text-decoration: none;
     color: #F4F6F7;
   }
+`;
+export const PopularStoryWrapper = styled.div`
+  max-width: 100%;
+  overflow: visable;
+  padding: 0 50px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  @media(max-width: 780px){
+    margin-top: 12%;
+    padding: 0 30px;
+  }
+`;
+
+
+export const PopularStorySlider = styled.div`
+  display: flex;
+  animation: ${scroll} 15s linear infinite;
+
+`;
+
+export const StoryCard = styled.div`
+  width: 15%;
+  background-color: rgba(256, 256, 256, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.3%;
+  position: relative;
+  margin-right: 30px; 
+  border-radius: 15px;
+  flex-shrink: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  @media(max-width: 780px){
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 1px;
+  }
+  &:hover {
+    transform: scale(1.06); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+`;
+export const CardImage = styled.img`
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute; 
+  top: -50px; 
+  left: 10%;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  @media(max-width: 780px){
+    max-height: 150px;
+  }
+`;
+
+export const StoryCardText = styled.div`
+  line-height: 1.7;
+  .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: #000;
+    max-width: 93%;
+    margin: 0 auto;
+  }
+  @media(max-width: 780px){
+    line-height: 1.6;
+    .title {
+      font-size: 1.3rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+    }
+}
 `;

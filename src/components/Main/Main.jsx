@@ -1,20 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Slider from "react-slick";
 import * as M from './MainStyle';
 import cardIcon1 from '/src/assets/image/Main/cardIcon1.svg';
 import cardIcon2 from '/src/assets/image/Main/cardIcon2.svg';
 import cardIcon3 from '/src/assets/image/Main/cardIcon3.svg';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Main() {
+
+  const techData = [
+    { title: 'Javascript'},
+    { title: 'Python' },
+    { title: 'react' },
+    { title: 'react' },
+    { title: 'react' },
+  ];
   const navigate=useNavigate('');
     return (
-        <div style={{backgroundColor: '#010102'}}>
+        <div style={{backgroundColor: '#010102', maxWidth: '100%' }}>
         <M.MainWrapper>
           <M.Heading>프론트엔드 개발자 윤소은입니다.</M.Heading>
           <M.SubText>방문해 주셔서 감사합니다!</M.SubText>
           <M.StartButton onClick={e=>navigate('/aboutme')}>About Me</M.StartButton>
         </M.MainWrapper>
-    <M.CardWrapper>
+        <M.PopularStoryWrapper>
+        <M.PopularStorySlider>
+          {techData.map((tech, index) => (
+            <M.StoryCard key={index + techData.length}>
+            <M.StoryCardText>
+              <p className="title">{tech.title}</p>
+            </M.StoryCardText>
+          </M.StoryCard>
+          ))}
+          {techData.map((tech, index) => (
+            <M.StoryCard key={index + techData.length}>
+              <M.StoryCardText>
+                <p className="title">{tech.title}</p>
+              </M.StoryCardText>
+            </M.StoryCard>
+          ))}
+        </M.PopularStorySlider>
+      </M.PopularStoryWrapper>
+        <M.CardWrapper>
                 <M.Card>
                     <M.CardIcon src={cardIcon1} alt="Trade Desk" />
                     <M.CardTitle>기술 스택</M.CardTitle>
